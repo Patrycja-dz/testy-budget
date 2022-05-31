@@ -1,5 +1,6 @@
 
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
 import Home from './pages/Home'
 import About from './pages/About'
@@ -44,7 +45,7 @@ function App() {
           <Link to="https://freewebsitetemplates.com/go/facebook/" id="facebook" target="_blank">Facebook</Link>
 			    <Link to="https://freewebsitetemplates.com/go/twitter/" id="twitter" target="_blank">Twitter</Link>
 			    <Link to="https://freewebsitetemplates.com/go/googleplus/" id="googleplus" target="_blank">Google&#43;</Link>
-			    <Link to="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</Link>
+			    <Link to="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank"><FontAwesomeIcon icon="fa-brands fab-pinterest" /></Link>
 		    </div>
       </footer>
       </div>
