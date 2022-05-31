@@ -7,6 +7,7 @@ import Classes from './pages/Classes';
 import Instructors from './pages/Instructors';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+import Post from './pages/Post';
 function App() {
   return (
     <Router>
@@ -35,6 +36,7 @@ function App() {
         <Route path='/instructors' element={<Instructors />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/blog' element={<Blog />}/>
+        <Route path='/single-post' element={<Post />}/>
       </Routes>
       <footer>
         <div id="connect">
