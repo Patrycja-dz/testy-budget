@@ -5,9 +5,9 @@ function Classes() {
   return (
       <>
     <h2>Classes</h2>
-		<div class="content">
+		<div className="content">
 			<div>
-				<div class="section">
+				<div className="section">
 					<h3>Beginners</h3>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in neque condimentum, dignissim libero sit amet, blandit felis.
@@ -15,7 +15,7 @@ function Classes() {
 					<span>MWF : 8AM to 9AM</span>
 					<span>TTHS : 10AM-11AM</span>
 				</div>
-				<div class="section">
+				<div className="section">
 					<h3>Intermediate</h3>
 					<p>
 						Cras dignissim est sed lorem suscipit, ut ultrices dolor tempus. Cras venenatis gravida scelerisque. Aenean sit amet massa dui
@@ -23,7 +23,7 @@ function Classes() {
 					<span>MWF : 10AM-11AM</span>
 					<span>TTHS : 1PM-2PM</span>
 				</div>
-				<div class="section">
+				<div className="section">
 					<h3>Advanced</h3>
 					<p>
 						Quisque non quam lorem. Nulla eu placerat leo. Suspendisse eros risus, viverra sed fermentum vitae, gravida ac tellus.

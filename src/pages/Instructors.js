@@ -8,9 +8,9 @@ function Instructors() {
   return (
     <>
     <h2>Instructors</h2>
-		<div class="content">
+		<div className="content">
 			<div>
-				<ul class="section">
+				<ul className="section">
 					<li>
 						<img src={instructor1} alt="Yoga instructor one"></img>
 						<h4>Belle Humpfree</h4>
@@ -20,7 +20,7 @@ function Instructors() {
 						<h4>Jacob Collern</h4>
 					</li>
 				</ul>
-				<ul class="section">
+				<ul className="section">
 					<li>
 						<img src={instructor3} alt="Yoga instructor three"></img>
 						<h4>Edward Blanche</h4>
