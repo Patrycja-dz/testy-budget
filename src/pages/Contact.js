@@ -4,7 +4,7 @@ function Contact() {
   return (
     <>
     <h2>Contact</h2>
-		<form action="index.html">
+		<form>
 			<h3>Inquiries</h3>
 			<label for="name">
 				<span>Name</span>
