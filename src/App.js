@@ -11,9 +11,10 @@ import Post from './pages/Post';
 function App() {
   return (
     <Router>
-      <nav>
-        <h1>Belle &amp; Carrie <span>Rehabilitation Yoga</span></h1>
-        <ul>
+      <div className='wrapper'>
+      <nav className='navbar'>
+        <h1>Belle &amp; Carrie<br/><span>Rehabilitation Yoga</span></h1>
+        <ul className='navlinks'>
           <Link to='/'><li>HOME</li></Link>
           <Link to='/about'><li>ABOUT</li></Link>
           <Link to='/classes'>
@@ -46,6 +47,7 @@ function App() {
 			    <Link to="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</Link>
 		    </div>
       </footer>
+      </div>
     </Router>
   );
 }
