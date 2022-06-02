@@ -181,7 +181,9 @@ a {
     padding: 0 0 15px 0;
     color: var(--home-text);
 }
-
+.heading--moved{
+    padding: 0 0 44px 0;
+}
 .section {
     display: flex;
     padding-bottom: 20px;
@@ -214,4 +216,21 @@ a {
 .article__timing {
     display: block;
     line-height: 30px;
+}
+.gallery{
+    display: flex;
+    width: 510px;
+    flex-wrap: wrap;
+     justify-content: space-between; 
+}
+.figure:nth-of-type(3),
+.figure:nth-of-type(4){
+    transform: translateY(-60px);
+}
+
+.figure__caption{
+    text-align: center;
+    font-family: 'Nixie One', cursive;
+    font-size: 18px;
+    padding: 12px 0 0 0 ;
 }
