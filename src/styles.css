@@ -112,44 +112,57 @@ a {
     opacity: 1;
 }
 
-.home{
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.home__text {
-    text-align: center; 
- 
-     width: 510px;
- 
-    display: flex;
-    flex-direction: column;
-  justify-content: center;
-    align-items: center; 
-    flex: 7;
+.home__content {
+    text-align: center;
     font-family: 'Nixie One', cursive;
-    font-size: 100px;
+    font-size: 90px;
     text-transform: uppercase;
     color: var(--home-text);
- 
+
 }
-.home__separator{
+
+.home__separator {
     background-image: url('./images/bg-separator.png');
     background-repeat: no-repeat;
     background-position: 50% 100%;
     padding: 0 0 55px 0;
     text-align: center;
 }
-.home__women{
+.home__text{
+    padding: 43px 0 0 0;
+}
+
+.home__women {
     flex: 2;
 }
-/* .home__text p {
-    font-family: 'Nixie One', cursive;
-    font-size: 100px;
-    text-transform: uppercase;
-    color: var(--home-text);
-    text-align: center;
-    padding: 0 0 55px 0;
-    
-} */
+
+
+.footer {
+    width: 960px;
+    margin: 0 195px 0 195px;
+    padding: 30px 0 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contact span {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    color: var(--main-heading-color);
+}
+
+.footer__contact p {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: var(--light-text-color);
+}
+
+.footer__connect span {
+    margin: 0 0 0 28px;
+}

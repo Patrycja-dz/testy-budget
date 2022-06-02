@@ -4,12 +4,11 @@ function Home() {
   return (
     <>
       <div className="home">
-        <div className="home__text">
+        <div className="home__content">
           <p className="home__separator">Yoga</p>
-          <div className="">
-            <p>For Better</p>
-            <p> Health &amp; <br/>Flexibility
-            </p>
+          <div className="home__text">
+            <span>For Better</span>
+            <p> Health &amp; Flexibility</p>
           </div>
         </div>
 
