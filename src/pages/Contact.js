@@ -3,29 +3,29 @@ import React from "react";
 function Contact() {
   return (
     <>
-      <h2 className="heading">Contact</h2>
+    <h2 className="heading">Contact</h2>
+    
+    <div className="contact-container">
       <form className="form ">
         <fieldset className="form__fieldset">
-          <h3>Inquiries</h3>
-          <p>
+          <h3 className="article__title">Inquiries</h3>
+         
             <label for="name" className="form__label">
               <span>Name</span>
-              <input type="text" id="name" />
+              <input type="text" id="name" className="form__field"/>
             </label>
-          </p>
-          <p>
+      
             <label for="email" className="form__label">
               <span>Email</span>
-              <input type="text" id="email" />
+              <input type="text" id="email" className="form__field" />
             </label>
-          </p>
-          <p>
+   
+        
             <label for="subject" className="form__label">
               <span>Subject</span>
-              <input type="text" id="subject" />
+              <input type="text" id="subject" className="form__field" />
             </label>
-          </p>
-          <p>
+       
             <label for="message" className="form__label">
               <span>Message</span>
               <textarea
@@ -33,12 +33,13 @@ function Contact() {
                 id="message"
                 cols="30"
                 rows="10"
-              ></textarea>
+                className="form__field"></textarea>
             </label>
-          </p>
+        
         </fieldset>
         <button className="form__button">Send</button>
       </form>
+    </div>
     </>
   );
 }
