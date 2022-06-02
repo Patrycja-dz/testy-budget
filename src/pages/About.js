@@ -51,7 +51,7 @@ function About() {
         </section>
 
         <div className="women">
-          <img src={lady} alt="lady in yoga" className="women"></img>
+          <img src={lady} alt="lady in yoga"></img>
         </div>
       </section>
     </>

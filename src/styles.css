@@ -124,7 +124,7 @@ a {
     font-size: 90px;
     /* text-transform: uppercase; */
     color: var(--home-text);
-
+    width: 510px;
 }
 
 .home__separator {
@@ -147,7 +147,7 @@ a {
 .women img {
     margin: 0 38px 46px 30px;
     width: 283px;
-    
+
 }
 
 .footer {
@@ -193,10 +193,11 @@ a {
     width: 510px;
 
 }
-.article:nth-child(2),
-.article:nth-child(3){
-    padding: 55px 0 0 0 ;
+
+.artcile--moved {
+    padding: 35px 0 0 0;
 }
+
 .article__title {
     font-family: 'Nixie One', cursive;
     font-size: 23px;
@@ -209,7 +210,8 @@ a {
     font-size: 14px;
     line-height: 30px
 }
-.article__timing{
+
+.article__timing {
     display: block;
     line-height: 30px;
 }

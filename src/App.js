@@ -60,6 +60,7 @@ function App() {
           <Route path="/single-post" element={<Post />} />
         </Routes>
       </div>
+      
       <footer className="footer">
         <div className="footer__contact">
           <span> 123 St.City Location, Country | 987654321 </span>
