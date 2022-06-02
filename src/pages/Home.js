@@ -12,8 +12,8 @@ function Home() {
           </div>
         </div>
 
-        <div className="home__women">
-          <img src={lady} alt="lady in yoga" className="womenInYoga"></img>
+        <div className="women">
+          <img src={lady} alt="lady in yoga"></img>
         </div>
       </div>
     </>
