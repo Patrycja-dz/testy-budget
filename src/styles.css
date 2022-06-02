@@ -327,7 +327,7 @@ a {
         flex-direction: column;
     }
     .articles{
-        width:600px
+        width:600px;
     }
 }
 .aside{
