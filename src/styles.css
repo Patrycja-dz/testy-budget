@@ -320,6 +320,15 @@ a {
 .single-post{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap
+}
+@media screen and (max-width:768px){
+    .single-post{
+        flex-direction: column;
+    }
+    .articles{
+        width:600px
+    }
 }
 .aside{
     flex-basis: 259px;
