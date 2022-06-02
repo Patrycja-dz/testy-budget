@@ -142,11 +142,14 @@ a {
 
 .women {
     flex: 1;
+}
+
+.women img {
+    margin: 0 38px 46px 30px;
     width: 283px;
+    
 }
-.women img{
-    margin: 0 38px 46px 0;
-}
+
 .footer {
     width: 960px;
     margin: 0 195px 0 195px;
@@ -179,26 +182,34 @@ a {
     color: var(--home-text);
 }
 
-.about {
+.section {
     display: flex;
+    padding-bottom: 20px;
 }
 
-.about__text {
+.section__text {
     display: flex;
     flex-direction: column;
     width: 510px;
-   flex:  1 2 auto;
-}
 
-.about__title {
+}
+.article:nth-child(2),
+.article:nth-child(3){
+    padding: 55px 0 0 0 ;
+}
+.article__title {
     font-family: 'Nixie One', cursive;
     font-size: 23px;
     font-weight: 100;
     padding: 23px 0 0 0;
 }
 
-.about__description {
+.article__description {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 30px
+}
+.article__timing{
+    display: block;
+    line-height: 30px;
 }

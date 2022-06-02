@@ -7,7 +7,7 @@ import instructor4 from './../images/instructor4.jpg'
 function Instructors() {
   return (
     <>
-    <h2>Instructors</h2>
+    <h2 className='heading'>Instructors</h2>
 		<div className="content">
 			<div>
 				<ul className="section">

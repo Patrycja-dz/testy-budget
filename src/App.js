@@ -19,7 +19,7 @@ function App() {
     <Router>
       <header className="header">
         <h1 className="header__heading">
-          Belle & amp; Carrie <br />
+          Belle &amp; Carrie <br />
           <span className="header__subtitle"> Rehabilitation Yoga </span>
         </h1>
       </header>
