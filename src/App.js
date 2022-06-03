@@ -14,7 +14,7 @@ import Blog from "./pages/Blog";
 import Post from "./pages/Post";
 import Calculator from "./pages/Calculator";
 
-function App() {
+function App(props) {
   const style = { color: "#99FA99", fontSize: "26px" };
   return (
     <Router>

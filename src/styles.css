@@ -23,6 +23,7 @@ body {
     background-color: var(--bg-color);
     color: var(--nav-text-color);
     display: flex;
+    overflow: hidden;
 }
 
 a {
@@ -267,7 +268,8 @@ a {
     padding: 12px 0 0 0;
 }
 
-.contact-container {
+.contact-container,
+.form-container {
     width: 460px;
     display: flex;
     justify-content: center;

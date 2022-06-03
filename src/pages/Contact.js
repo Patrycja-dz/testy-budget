@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
+  let navigate = useNavigate();
   return (
     <>
       <h2 className="heading">Contact</h2>
@@ -40,7 +42,14 @@ function Contact() {
               </label>
             </p>
           </fieldset>
-          <button className="form__button">Send</button>
+          <button
+            className="form__button"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Send
+          </button>
         </form>
       </div>
     </>
