@@ -1,16 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 function ErrorPage() {
-  let navigate = useNavigate();
+  let returnToOtherPage = useNavigate();
   return (
-    <div>
-      ErrorPage
+    <>
+      <div>ErrorPage</div>
       <button
         onClick={() => {
-          navigate("/");
+          returnToOtherPage("/");
         }}
-      ></button>
-    </div>
+      >Return</button>
+    </>
   );
 }
 
