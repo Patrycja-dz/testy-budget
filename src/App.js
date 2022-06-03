@@ -12,6 +12,7 @@ import Instructors from "./pages/Instructors";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Post from "./pages/Post";
+import Calculator from "./pages/Calculator";
 
 function App() {
   const style = { color: "#99FA99", fontSize: "26px" };
@@ -64,6 +65,9 @@ function App() {
             <Link to="/blog">
               <li className="navbar__link"> BLOG </li>
             </Link>
+            <Link to="/calculator">
+              <li className="navbar__link"> CALCULATOR</li>
+            </Link>
           </ul>
         </div>
       </nav>
@@ -77,6 +81,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/single-post" element={<Post />} />
+          <Route path="/calculator" element={<Calculator/>} />
         </Routes>
       </div>
 
