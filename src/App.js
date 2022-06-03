@@ -13,8 +13,9 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Post from "./pages/Post";
 import Calculator from "./pages/Calculator";
+import ErrorPage from './pages/ErrorPage';
 
-function App(props) {
+function App() {
   const style = { color: "#99FA99", fontSize: "26px" };
   return (
     <Router>
@@ -26,11 +27,11 @@ function App(props) {
       </header>
       <nav className="navbar">
           <ul className="navbar__links">
-            <Link to="/">
-              <li className="navbar__link"> HOME </li>
+            <Link to="/" className="navbar__link">
+             HOME
             </Link>
-            <Link to="/about">
-              <li className="navbar__link"> ABOUT </li>
+            <Link to="/about" className="navbar__link">
+               ABO
             </Link>
             <Link to="/classes">
               <li className="navbar__link">
@@ -56,7 +57,7 @@ function App(props) {
 
       <div className="wrapper">
         <Routes>
-          <Route index element={<Home />} />
+          <Route path ="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/instructors" element={<Instructors />} />
@@ -64,6 +65,7 @@ function App(props) {
           <Route path="/blog" element={<Blog />} />
           <Route path="/single-post" element={<Post />} />
           <Route path="/calculator" element={<Calculator/>} />
+          <Route path="*" element={<ErrorPage/>}/>
         </Routes>
       </div>
 
