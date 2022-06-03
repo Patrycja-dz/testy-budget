@@ -25,23 +25,6 @@ function App(props) {
         </h1>
       </header>
       <nav className="navbar">
-        <button className="hamburger">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="white"
-            viewBox="0 0 24 24"
-            stroke="#99FA99"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-        <div className="navbar__nav">
           <ul className="navbar__links">
             <Link to="/">
               <li className="navbar__link"> HOME </li>
@@ -69,7 +52,6 @@ function App(props) {
               <li className="navbar__link"> CALCULATOR</li>
             </Link>
           </ul>
-        </div>
       </nav>
 
       <div className="wrapper">
