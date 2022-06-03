@@ -56,7 +56,7 @@ function App(props) {
 
       <div className="wrapper">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/instructors" element={<Instructors />} />
