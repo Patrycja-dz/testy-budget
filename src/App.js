@@ -27,11 +27,11 @@ function App() {
       </header>
       <nav className="navbar">
           <ul className="navbar__links">
-            <Link to="/" className="navbar__link">
-             HOME
+            <Link to="/">
+             <li className="navbar__link">HOME</li>
             </Link>
-            <Link to="/about" className="navbar__link">
-               ABO
+            <Link to="/about">
+            <li className="navbar__link">ABOUT</li>
             </Link>
             <Link to="/classes">
               <li className="navbar__link">
