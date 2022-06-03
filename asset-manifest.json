@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/yoga/static/css/main.dd9fe921.css",
-    "main.js": "/yoga/static/js/main.408f70c7.js",
+    "main.css": "/yoga/static/css/main.f63164e8.css",
+    "main.js": "/yoga/static/js/main.ad1e1583.js",
     "static/js/787.3aa5f880.chunk.js": "/yoga/static/js/787.3aa5f880.chunk.js",
     "static/media/lady-in-yoga.jpg": "/yoga/static/media/lady-in-yoga.08320083611fd364fd21.jpg",
     "static/media/lying-yoga2.jpg": "/yoga/static/media/lying-yoga2.c6f8b7653cb24360a027.jpg",
@@ -10,12 +10,12 @@
     "static/media/instructor3.jpg": "/yoga/static/media/instructor3.5baaefa3f634c807f6e2.jpg",
     "static/media/instructor4.jpg": "/yoga/static/media/instructor4.c9be108219af1326ca32.jpg",
     "index.html": "/yoga/index.html",
-    "main.dd9fe921.css.map": "/yoga/static/css/main.dd9fe921.css.map",
-    "main.408f70c7.js.map": "/yoga/static/js/main.408f70c7.js.map",
+    "main.f63164e8.css.map": "/yoga/static/css/main.f63164e8.css.map",
+    "main.ad1e1583.js.map": "/yoga/static/js/main.ad1e1583.js.map",
     "787.3aa5f880.chunk.js.map": "/yoga/static/js/787.3aa5f880.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd9fe921.css",
-    "static/js/main.408f70c7.js"
+    "static/css/main.f63164e8.css",
+    "static/js/main.ad1e1583.js"
   ]
 }
