@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import {FaFacebookF} from 'react-icons/fa'
-import {FaTwitter} from 'react-icons/fa'
-import {TiSocialGooglePlus} from 'react-icons/ti'
-import {FaPinterest} from 'react-icons/fa'
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { TiSocialGooglePlus } from "react-icons/ti";
+import { FaPinterest } from "react-icons/fa";
 //import "./App.css";
 import "./styles.css";
 import Home from "./pages/Home";
@@ -14,7 +14,7 @@ import Blog from "./pages/Blog";
 import Post from "./pages/Post";
 
 function App() {
-  const style = {color: '#99FA99', fontSize:"26px"}
+  const style = { color: "#99FA99", fontSize: "26px" };
   return (
     <Router>
       <header className="header">
@@ -24,31 +24,50 @@ function App() {
         </h1>
       </header>
       <nav className="navbar">
-        <ul className="navbar__links">
-          <Link to="/">
-            <li className="navbar__link"> HOME </li>
-          </Link>
-          <Link to="/about">
-            <li className="navbar__link"> ABOUT </li>
-          </Link>
-          <Link to="/classes">
-            <li className="navbar__link">
-              CLASSES
-              <ul className="navbar__link navbar__link--dropdown">
-                <Link to="/instructors">
-                  <li className="navbar__link"> INSTRUCTORS </li>
-                </Link>
-              </ul>
-            </li>
-          </Link>
-          <Link to="/contact">
-            <li className="navbar__link"> CONTACT </li>
-          </Link>
-          <Link to="/blog">
-            <li className="navbar__link"> BLOG </li>
-          </Link>
-        </ul>
+        <button className="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="white"
+            viewBox="0 0 24 24"
+            stroke="#99FA99"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <div className="navbar__nav">
+          <ul className="navbar__links">
+            <Link to="/">
+              <li className="navbar__link"> HOME </li>
+            </Link>
+            <Link to="/about">
+              <li className="navbar__link"> ABOUT </li>
+            </Link>
+            <Link to="/classes">
+              <li className="navbar__link">
+                CLASSES
+                <ul className="navbar__link navbar__link--dropdown">
+                  <Link to="/instructors">
+                    <li className="navbar__link"> INSTRUCTORS </li>
+                  </Link>
+                </ul>
+              </li>
+            </Link>
+            <Link to="/contact">
+              <li className="navbar__link"> CONTACT </li>
+            </Link>
+            <Link to="/blog">
+              <li className="navbar__link"> BLOG </li>
+            </Link>
+          </ul>
+        </div>
       </nav>
+
       <div className="wrapper">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -60,7 +79,7 @@ function App() {
           <Route path="/single-post" element={<Post />} />
         </Routes>
       </div>
-      
+
       <footer className="footer">
         <div className="footer__contact">
           <span> 123 St.City Location, Country | 987654321 </span>
@@ -75,28 +94,36 @@ function App() {
             id="facebook"
             target="_blank"
           >
-            <span><FaFacebookF style={style}/></span>
+            <span>
+              <FaFacebookF style={style} />
+            </span>
           </Link>
           <Link
             to="https://freewebsitetemplates.com/go/twitter/"
             id="twitter"
             target="_blank"
           >
-            <span><FaTwitter  style={style}/></span>
+            <span>
+              <FaTwitter style={style} />
+            </span>
           </Link>
           <Link
             to="https://freewebsitetemplates.com/go/googleplus/"
             id="googleplus"
             target="_blank"
           >
-          <span><TiSocialGooglePlus style={style}/></span>
+            <span>
+              <TiSocialGooglePlus style={style} />
+            </span>
           </Link>
           <Link
             to="https://freewebsitetemplates.com/go/pinterest/"
             id="pinterest"
             target="_blank"
           >
-         <span><FaPinterest style={style}/></span>
+            <span>
+              <FaPinterest style={style} />
+            </span>
           </Link>
         </div>
       </footer>
