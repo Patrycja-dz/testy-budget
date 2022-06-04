@@ -1,8 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import {useForm} from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
 function Contact() {
   let navigate = useNavigate();
+  const schema = yup.object({
+    userName: yup.string().required(),
+    email: 
+  })
   return (
     <>
       <h2 className="heading">Contact</h2>
