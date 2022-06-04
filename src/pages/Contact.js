@@ -5,28 +5,39 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 function Contact() {
   let navigate = useNavigate();
+
   const schema = yup.object({
     userName: yup.string().required(),
-    email: 
-  })
+    email: yup.string().email("/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/",{ excludeIncorrectEmail:true}).required()
+  }).required();
+
+  const { register, handleSubmit, formState:{ errors } } = useForm({
+    resolver: yupResolver(schema)
+  });
+
+
   return (
     <>
       <h2 className="heading">Contact</h2>
 
       <div className="contact-container">
-        <form className="form">
+        <form className="form" onSubmit = {handleSubmit((data)=>{
+          console.log(data)
+        })}>
           <fieldset className="form__fieldset">
             <h3 className="form__title">Inquiries</h3>
             <p>
               <label for="name" className="form__label">
                 <span>Name</span>
-                <input type="text" id="name" className="form__field" />
+                <input type="text" id="name" className="form__field" {...register("userName")}/>
+                <p>{errors.userName?.message}</p>
               </label>
             </p>
             <p>
               <label for="email" className="form__label">
                 <span>Email</span>
-                <input type="text" id="email" className="form__field" />
+                <input type="text" id="email" className="form__field" {...register("email")}/>
+                <p>{errors.email?.message}</p>
               </label>
             </p>
             <p>
@@ -49,10 +60,10 @@ function Contact() {
             </p>
           </fieldset>
           <button
-            className="form__button"
-            onClick={() => {
-              navigate("/");
-            }}
+            // className="form__button"
+            // onClick={() => {
+            //   navigate("/");
+            // }}
           >
             Send
           </button>
