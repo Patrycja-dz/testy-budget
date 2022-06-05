@@ -6,9 +6,11 @@ import * as yup from "yup";
 function Contact() {
   let navigate = useNavigate();
 
-  const schema = yup.object({
-    userName: yup.string().required(),
-    email: yup.string().email("/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/",{ excludeIncorrectEmail:true}).required()
+  let schema = yup.object({
+    user: yup.string().required(),
+    email: yup.string().email("Email is invalid").required(),
+    subject: yup.string(),
+    message: yup.string(),
   }).required();
 
   const { register, handleSubmit, formState:{ errors } } = useForm({
@@ -29,7 +31,7 @@ function Contact() {
             <p>
               <label for="name" className="form__label">
                 <span>Name</span>
-                <input type="text" id="name" className="form__field" {...register("userName")}/>
+                <input type="text" id="name" className="form__field" {...register("user")}/>
                 <p>{errors.userName?.message}</p>
               </label>
             </p>
@@ -43,7 +45,7 @@ function Contact() {
             <p>
               <label for="subject" className="form__label">
                 <span>Subject</span>
-                <input type="text" id="subject" className="form__field" />
+                <input type="text" id="subject" className="form__field" {...register("subject")}/>
               </label>
             </p>
             <p>
@@ -55,6 +57,7 @@ function Contact() {
                   cols="30"
                   rows="10"
                   className="form__field textarea"
+                  {...register("message")}
                 ></textarea>
               </label>
             </p>
