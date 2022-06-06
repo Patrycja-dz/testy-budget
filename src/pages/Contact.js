@@ -10,10 +10,10 @@ function Contact() {
 
   let schema = yup
     .object({
-      user: yup.string().required(),
+      user: yup.string().min(3).required(),
       email: yup.string().email("Email is invalid").required(),
-      subject: yup.string(),
-      message: yup.string(),
+      subject: yup.string().optional(),
+      message: yup.string().optional(),
     })
     .required();
 
@@ -80,7 +80,7 @@ function Contact() {
                   onChange={e=> setName(e.target.value)}
                 />
 
-                <p>{errors.userName?.message}</p>
+                <p>{errors.user?.message}</p>
               </label>
             </p>
             <p>
