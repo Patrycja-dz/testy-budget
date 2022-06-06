@@ -40,18 +40,20 @@ function Contact() {
       message: message,
     };
     axios
-      .post("https://httpbin.org/post", data)
+      .post("http://httpbin.org/post", data)
       .then((res) => {
         setData(res.data);
         setName("");
         setEmail("");
         setSubject("");
         setMessage("");
-        console.log("data was submit")
+      //console.log(res.data);
+       
       })
       .catch((err) => {
         setIsError(true);
       });
+    
   };
 
   return (
