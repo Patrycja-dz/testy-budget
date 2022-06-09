@@ -15,13 +15,12 @@ Currently, the  responsive  view  is under  construction
 </p>
 
 ## Used concepts
-
-✅ React Router v6
-✅ Fetch Exchange Rates API
-✅ React-hook-form
-✅ Yup 
-✅ Hooks : useState, useEffect, useNavigate
-✅ ES6 + features 
+✅ React Router v6<<br>
+✅ Fetch Exchange Rates API<br>
+✅ React-hook-form<br>
+✅ Yup <br>
+✅ Hooks : useState, useEffect, useNavigate<br>
+✅ ES6 + features <br>
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
