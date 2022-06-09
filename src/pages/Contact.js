@@ -8,10 +8,9 @@ import * as yup from "yup";
 function Contact() {
   const navigate = useNavigate();
 
-  let schema = yup
-    .object({
+  let schema = yup.object({
       user: yup.string().min(3).required(),
-      email: yup.string().email("Email is invalid").required(),
+      email: yup.string().email().required(),
       subject: yup.string().optional(),
       message: yup.string().optional(),
     })
@@ -19,7 +18,7 @@ function Contact() {
 
   const {
     register,
-   handleSubmit,
+    handleSubmit,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
@@ -34,7 +33,6 @@ function Contact() {
 
 
   const submit = async () => {
-   // e.preventDefault();
     try {
       const response = await axios.post(
         "https://httpbin.org/post",
@@ -44,7 +42,7 @@ function Contact() {
           withCredentials: true,
         }
       );   
-      //console.log(response.data);
+      console.log(response.data);
       //console.log(JSON.stringify(response));
       setSuccess(true);
     } catch (err) {
@@ -138,7 +136,7 @@ function Contact() {
               </fieldset>
               <button id="contact-btn"
                 disabled={
-                  !name || !email|| !subject || !message ? true : false 
+                  !name || !email || !subject || !message   ? true : false 
                 }
               >
                 Send
