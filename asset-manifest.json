@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yoga-react/static/css/main.f63164e8.css",
-    "main.js": "/yoga-react/static/js/main.fde102ce.js",
+    "main.js": "/yoga-react/static/js/main.abb7d166.js",
     "static/js/787.c2ba2ad5.chunk.js": "/yoga-react/static/js/787.c2ba2ad5.chunk.js",
     "static/media/lady-in-yoga.jpg": "/yoga-react/static/media/lady-in-yoga.08320083611fd364fd21.jpg",
     "static/media/lying-yoga2.jpg": "/yoga-react/static/media/lying-yoga2.c6f8b7653cb24360a027.jpg",
@@ -11,11 +11,11 @@
     "static/media/instructor4.jpg": "/yoga-react/static/media/instructor4.c9be108219af1326ca32.jpg",
     "index.html": "/yoga-react/index.html",
     "main.f63164e8.css.map": "/yoga-react/static/css/main.f63164e8.css.map",
-    "main.fde102ce.js.map": "/yoga-react/static/js/main.fde102ce.js.map",
+    "main.abb7d166.js.map": "/yoga-react/static/js/main.abb7d166.js.map",
     "787.c2ba2ad5.chunk.js.map": "/yoga-react/static/js/787.c2ba2ad5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f63164e8.css",
-    "static/js/main.fde102ce.js"
+    "static/js/main.abb7d166.js"
   ]
 }
