@@ -15,7 +15,7 @@ Currently, the  responsive  view  is under  construction
 </p>
 
 ## Used concepts
-✅ React Router v6<<br>
+✅ React Router v6<br>
 ✅ React-hook-form<br>
 ✅ Yup <br>
 ✅ Hooks : useState, useEffect, useNavigate<br>
