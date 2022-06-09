@@ -16,10 +16,11 @@ Currently, the  responsive  view  is under  construction
 
 ## Used concepts
 ✅ React Router v6<<br>
-✅ Fetch Exchange Rates API<br>
 ✅ React-hook-form<br>
 ✅ Yup <br>
 ✅ Hooks : useState, useEffect, useNavigate<br>
+✅ Fetch Exchange Rates API<br>
+✅ AXIOS<br>
 ✅ ES6 + features <br>
 
 
