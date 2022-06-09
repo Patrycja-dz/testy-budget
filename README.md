@@ -1,4 +1,28 @@
-# Getting Started with Create React App
+# React-Yoga
+## Preview Site  ➡️ [tap here](https://patrycja-dz.github.io/yoga-react/)
+This  is  a  website  created  on  the basis  of  a  template  from  the  page: **https://freewebsitetemplates.com/** In  addition, as  a  separate  section  not  included  in  the  template, I  have  added  a  currency  converter  that  downloads  the API from [NBP](https://api.nbp.pl/?ref=public-apis]) and  converts  the  specified  amount  of  money  into  one  of  the  selected  currencies (available  currencies  are  CHF, EUR  or  USD)
+
+Currently, the  responsive  view  is under  construction
+
+
+## Used technologies 
+<p>
+<img alt="React" src="https://img.shields.io/badge/React-FFF?logo=React&logoColor=ColorName&style=ShieldStyle" />
+<img alt="npm" src="https://img.shields.io/badge/npm-ddd?logo=npm&logoColor=ColorName&style=ShieldStyle" />
+<img alt="CSS" src="https://img.shields.io/badge/css-EC5990?logo=css&logoColor=ColorName&style=ShieldStyle" />
+<img alt="JSX" src="https://img.shields.io/badge/JSX-219ebc?logo=jsx&logoColor=ColorName&style=ShieldStyle" />
+
+</p>
+
+## Used concepts
+
+✅ React Router v6
+✅ Fetch Exchange Rates API
+✅ React-hook-form
+✅ Yup 
+✅ Hooks : useState, useEffect, useNavigate
+✅ ES6 + features 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
